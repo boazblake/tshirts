@@ -20,7 +20,7 @@ div .deets .cost{
   position: relative;
   border: 1px solid #76B1DE;
   position: relative;
-  max-width: 350px;
+  max-width: 650px;
   margin: 0;
   background-color: white;
 }
@@ -39,8 +39,8 @@ div .deets .cost{
 
 .container{
   border: 2px solid white;
-  height:350px;
-  width:350px;
+  height:650px;
+  width:650;
   padding:0px;
   perspective: 1000px;
   margin: 0 auto;
@@ -62,8 +62,8 @@ div .deets .cost{
       position: absolute;
       top: 0;
       left: 0;
-      height: 348px;
-      width: 348px;
+      height: 648;
+      width: 648;
       background-color: white;
       z-index: 1;
     }
@@ -75,8 +75,8 @@ div .deets .cost{
         left: 0;
         background-color: white;
         color: white;
-        height: 348px;
-        width: 348px;
+        height: 648px;
+        width: 648px;
         transform: rotateY(180deg);
       }
 
