@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 0;
+}
+
+#mainFrame > * {
+  border: 1px solid brown;
+  position: relative;
+  width: 350px;
+}
+
+.container{
+
+}
+
+.container > {
+  display: block;
+  
+}
+
+.menubar {
+  display: inline-block;
+  width: 100%
+}
+
+
+.icon {
+  border: 1px solid brown;
+  display: inline-block;
+  width: 20%;
+}
+
+
+.turnIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 100px;
+}
+
+/*#mainFrame {
+  width:700px;
+  height:700px;
+  margin: 0 auto;
+  padding-top: 40px;
+  background-color: blue;
+}
+
+.container {
+  border: 2px solid red;
+  height:600px;
+  width:600px;
+  margin:auto;
+  padding:0px;
+
+  perspective: 1000px;
+}
+
+.container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: 0.6s;
+    }
+
+.card .front {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 600px;
+      width: 600px;
+      background-color: red;
+      z-index: 2;
+    }
+
+.card .back {
+        backface-visibility: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: black;
+        color: white;
+        height: 600px;
+        width: 600px;
+        transform: rotateY(180deg);
+      }
+Status API Training Shop Blog About Pricing*/
