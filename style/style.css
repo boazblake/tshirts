@@ -6,59 +6,46 @@ body {
   font-size: 0;
 }
 
-#mainFrame > * {
-  border: 1px solid brown;
+div.deets{
+  color: #76B1DE;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+div .deets .cost{
+  float: right;
+}
+
+#wrapper > * {
   position: relative;
-  width: 350px;
+  border: 1px solid #76B1DE;
+  position: relative;
+  max-width: 350px;
+  margin: 0;
+  background-color: white;
 }
-
-.container{
-
-}
-
-.container > {
-  display: block;
-  
-}
-
-.menubar {
-  display: inline-block;
-  width: 100%
-}
-
-
-.icon {
-  border: 1px solid brown;
-  display: inline-block;
-  width: 20%;
-}
-
 
 .turnIcon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: inline-block;
-  width: 100px;
+  position: relative;
+  float: right;
+  width: 20%;
+  z-index: 2;
 }
 
-/*#mainFrame {
-  width:700px;
-  height:700px;
-  margin: 0 auto;
-  padding-top: 40px;
+.turnicon:checked .menubar{
   background-color: blue;
 }
 
-.container {
-  border: 2px solid red;
-  height:600px;
-  width:600px;
-  margin:auto;
-  padding:0px;
 
+.container{
+  border: 2px solid white;
+  height:350px;
+  width:350px;
+  padding:0px;
   perspective: 1000px;
+  margin: 0 auto;
 }
+
 
 .container:hover .card {
   transform: rotateY(180deg);
@@ -75,10 +62,10 @@ body {
       position: absolute;
       top: 0;
       left: 0;
-      height: 600px;
-      width: 600px;
-      background-color: red;
-      z-index: 2;
+      height: 348px;
+      width: 348px;
+      background-color: white;
+      z-index: 1;
     }
 
 .card .back {
@@ -86,10 +73,31 @@ body {
         position: absolute;
         top: 0;
         left: 0;
-        background-color: black;
+        background-color: white;
         color: white;
-        height: 600px;
-        width: 600px;
+        height: 348px;
+        width: 348px;
         transform: rotateY(180deg);
       }
-Status API Training Shop Blog About Pricing*/
+
+
+
+
+.menubar {
+  display: inline-block;
+  width: 350px;
+  vertical-align: bottom;
+  }
+
+
+.icon {
+  vertical-align: bottom;
+  border: 1px solid #76B1DE;
+  display: inline-block;
+  width: 20%;
+}
+
+.icon:hover{
+  background-color: #76B1DE; 
+}
+
