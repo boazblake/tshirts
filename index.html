@@ -1,81 +1,83 @@
-<!DOCTYPE html>
 <html>
+
 <head>
-	<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-    <script src="/js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css"> //
+    <script src="/js/script.js" type="text/javascript" charset="utf-8" async="" defer=""></script>
     <title></title>
 </head>
+
 <body>
-	
 
-	<div id="wrapper">
-			<div class="container">
-				<div type="checkbox" class="turnIcon">
-					<img src="" alt="turnIcon">
-				</div>
+    <div class="allShirts">
 
+        <div class="shirtBox">
 
+           <div class="imageContainer">
+		        <i class="material-icons iconTurn">3d_rotation</i>
+		        <input type="checkbox" class="iconTurn" id="iconTurn" />
+		        
 
-				<div id="card">
-	  				<img src="#" class="front">
-	  				<img src="#" class="back" alt="back">
-				</div>
-    		</div>
+		        <div class="imgHolder">
+		            <img src="images/blueshirtfront.jpg" alt="front" class="front">
+		            <img src="images/blueshirtback.jpg" class="back" alt="back">
+		        </div>
+           </div>
 
-
-
-			<div class="menuBar">
-				<div class="icon" id="iconZero" type="checkbox">
-					<img src="#" alt="iconZero">
-				</div>
-				<div class="icon" id="iconOne" type="checkbox">
-					<img src="#" alt="iconOne">
-				</div>
-				<div class="icon" id="iconTwo" type="checkbox">
-					<img src="#" alt="iconTwo">
-					<ul id="listShirts">
-						<li class="listShirts">S</li>
-						<li class="listShirts">M</li>
-						<li class="listShirts">L</li>
-						<li class="listShirts">XL</li>
-					</ul>
-				</div>
-				<div class="icon" id="iconThree" type="checkbox"/>
-					<img src="#" alt="iconThree">
-					<div id="allColors">
-						<div class="top">
-							<div class="color" img src="" alt="">GREEN</div>
-							<div class="color">YELLOW</div>
-						</div>
-						<div class="bottom">
-							<div class="color">BLUE</div>
-							<div class="color">BROWN</div>
-						</div>
-					</div>
-				</div>
-				<div class="icon" id="iconFour" type="checkbox"/>
-					<img src="#" alt="iconFour">
-				</div>
-
-
-<!-- fix hover to turnIcon -->
-<!-- fix rotate -->
-<!-- fix sizing -->
-<!-- Show iconThree show squares of images -->
-<!-- Make  iconTwo show a list of 4 shirts-->
+           <div class="menu align-children">
+        		<div class="icons">
+          			<i class="material-icons">repeat</i>
+          		</div>
+          		<div class="icons">
+          			<i class="material-icons">favorite</i>
+          		</div>
+          		<div class="icons sizes">
+          			<i class="material-icons">XL</i>
+          			<div class="sizeOptions aboveBox">
+          				<div class="xlarge">XL</div>
+          				<div class="large">L</div>
+          				<div class="medium">M</div>
+          				<div class="sml">S</div>
+          			</div>
+          		</div>
+          		<div class="icons swatches">
+          			<i class="material-icons">stop</i>
+          			<div class="swatchOptions aboveBox align-children">
+          				<div class="red swatchColor">
+          					<i class="material-icons">stop</i>
+          				</div>
+          				<div class="green swatchColor">
+          					<i class="material-icons">stop</i>
+          				</div>
+          				<div class="blue swatchColor">
+          					<i class="material-icons">stop</i>
+          				</div>
+          				<div class="yellow swatchColor">
+          					<i class="material-icons">stop</i>
+          				</div>
+          			</div>
+          		</div>
+          		<div class="icons">
+          			<i class="material-icons">shopping_cart</i>
+          		</div>
+           </div>
 
 
+           <div class="deets">
+                <div class="cost">$29</div>
+                <div class="name">Save my trees</div>
+           </div>
 
-
-			<div class="deets">
-				<div class="cost">$29</div>
-				<div class="name">Save my trees</div>
-			</div>
+        </div>
 
 
 
-		</div>
-	</div>
+
+    </div>
+
+
+
 </body>
+
 </html>

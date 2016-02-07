@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0;
+}
+
+
+#shirtbox {
+  perspective: 2000px;
+  position: relative;
+}
+
+.menubar {
+  vertical-align:bottom;
+}
+
+.material-icons {
+  display: inline-block;
+  margin: 0 auto;
+  width: 10%;
+  vertical-align: bottom;
+  border: 1px solid #76B1DE;
+  width: 20%;
+  -webkit-appearance:none;
+  outline: none;
+}
+
+div {
+  color: #76B1DE;
+  font-family: sans-serif;
+  font-size: 18 px;
+  margin: 0 auto;
+}
+
+div.deets{
+  font-size: 20 px;
+  color: #76B1DE;
+  font-family: sans-serif;
+  margin: 0 auto;
+}
+div .deets .cost{
+  float: right;
+  height: 100px;
+}
