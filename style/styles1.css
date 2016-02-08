@@ -16,23 +16,6 @@ html {
     vertical-align: top;
 }
 
-
-/*.container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction:row;
-}*/
-
-
-.layout {
-  width: 100%;
-  padding: 10px; 
-}
-.shirtBox {
-  width: 100%;
-}
-
 .imageContainer {
     background-color: white;
     border: 3px solid #4169e1;
@@ -43,6 +26,12 @@ html {
     position: relative;
     background-opacity: 0;
 }
+
+
+.shirtBox{
+  width: 100%;
+}
+
 
 .iconTurn {
     position: absolute;
@@ -76,14 +65,8 @@ i#iconTurn {
     width: 100%;
 }
 
-.imgHolder img {
-  width: 100%;
-}
-
 .front {
     position: relative;
-    backface-visibility:hidden;
-
 }
 
 .back {
@@ -99,9 +82,9 @@ input[type="checkBox"]:checked + .imgHolder {
     transition: 1s all ease;
 }
 
-/*input[type="checkBox"].iconTurner {
+input[type="checkBox"].iconTurner {
     /*display: none;*/
-}*/
+}
 
 input[type="checkBox"].iconTurner {
     display: inline-block;
@@ -150,30 +133,28 @@ input[type="checkBox"].iconTurner {
 .iconBox:hover > .sizeBox {
     color: #rgba(00, 0, 0, 0.2);
     opacity: 1;
-    -webkit-transition: 1s ease;
-    top: -189px;
+    -webkit-transition: 1.5s ease;
 }
 
 .iconBox .material-icons {
-    font-size: 2em;
+    font-size: 20px;
 }
 
 .sizeBox {
     background-color: rgba(00, 0, 0, 0.2);
     padding: 10px;
     position: absolute;
-    top: -199px;
+    top: -189px;
     right: 55%;
     transform: translateX(50%);
     opacity: 0;
-    font-size: 40px;
+    font-size: 25px;
+    width: 80px;
     transition: 2s ease;
 }
 
 .size {
     margin-bottom: 10px;
-    font-size: 40px;
-    padding: 1%;
 
 }
 
@@ -188,7 +169,7 @@ input[type="checkBox"].iconTurner {
 .swatchBox {
     background-color: rgba(00, 0, 0, 0.2);
     position: absolute;
-    top: -101px;
+    top: -91px;
     opacity: 0;
     transition: 2s ease;
     transform-style: preserve-3d;
@@ -215,16 +196,13 @@ input[type="checkBox"].iconTurner {
     border-top: 20px solid #4169e1;
 }
 .iconBox:hover > .swatchBox {
-    transition: 1s ease;
-    top:-91px;
+    transition: 2s ease;
     opacity: 1;
-
-
 }
 .iconBox:hover {
-    background-color: #504169e1; 
+    background-color: rgba(00, 0, 0, 0.2);
     color:yellow;
-    transition:1.5s all ease;
+    transition:2s all ease;
 
 
 
@@ -234,18 +212,15 @@ input[type="checkBox"].iconTurner {
     margin: 2.5px;
     width: 20px;
     font-size: 40px;
-    margin-bottom: 10px;
-    font-size: 40px;
-    padding: 1%;
 }
-
+        .swatch:hover {
+            transform: rotateZ(100deg);
 }
 .labelContainer {
   position: relative;
     background-color: #4169e1;
     color: white;
     padding: 0, 10%;
-    font-family: monospace;
 }
 
 
@@ -271,17 +246,16 @@ input[type="checkBox"].iconTurner {
 }
 
 
-
-
-@media screen and (min-width: 600px)  {
-.layout {
-  width: 100%;
-}
+@media screen and (max-width: 68.125em) {
+  .cbp-pggrid > li {
+    width: 48%;
+  }
 }
 
+@media screen and (max-width: 46.125em) {
+  .cbp-pggrid > li {
+    width: 100%;
+  }
+}
 
-@media screen and (min-width: 700px)  {
-.layout {
-  width: 33.3333%;
-}
-}
+
