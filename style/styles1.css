@@ -1,187 +1,255 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 html {
-  font-family: sans-serif;
-  min-width: 400px;
-
+    font-family: sans-serif;
 }
 
 .alignChildren {
-  font-size: 0;
+    font-size: 0;
 }
 
 .alignChildren > * {
-  display: inline-block;
-  font-size: medium;
-  vertical-align: top;
+    display: inline-block;
+    font-size: medium;
+    vertical-align: top;
 }
 
-.imageContainer{
-  text-align: center;
-  background-color: white;
-  border:3px solid #4169e1;
-  position: relative;
-  padding: 10px;
-  margin: 0 auto;
-  perspective: 2000px;
-  position: relative;
-  background-opacity: 0;
+.imageContainer {
+    background-color: white;
+    border: 3px solid #4169e1;
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    perspective: 2000px;
+    position: relative;
+    background-opacity: 0;
 }
-
 
 .iconTurn {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30px;
-  height: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    z-index: 2;
+    opacity: 0;
+    cursor: pointer;
 }
 
-input {
-  z-index: 2;
-  outline: none;
-  margin: 0 auto;
-  /*visibility: hidden;
-  display: none;*/
+i#iconTurn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    z-index: 1;
 }
 
-i.iconTurn {
-  z-index: 1;
-  outline: none;
-  text-align: center;
-}
-    
-
-.imgHolder{
-  position: relative;
-  top: 0;
-  left: 0;
-  outline: none;
-  position: relative;
-  transform-style: preserve-3d;
-  width: 100%;
-  transition: 1s all ease;
-
+.imgHolder {
+    position: relative;
+    top: 1;
+    left: 0;
+    outline: none;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 1s all ease;
+    width: 100%;
 }
 
-.front{
-  position: relative;
+.front {
+    position: relative;
 }
 
-.back{
-  transform:rotateY(180deg);
-  position: absolute;
-  margin: 0 auto;
-  top: 0;
-  left: 0;
-
+.back {
+    transform: rotateY(180deg);
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
 }
+
 input[type="checkBox"]:checked + .imgHolder {
-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    transition: 1s all ease;
 }
 
-
-
-.iconContainer{
-  text-align: center;
-  background-color: white;
-  border:3px solid #4169e1;
-  position: relative;
+input[type="checkBox"].iconTurner {
+    /*display: none;*/
 }
 
-
-.iconBox:hover > .swatch{
-  background-color: rgba(00, 0, 0, 0.2);
-  color: white;
-  transform:rotateX(360deg);
+input[type="checkBox"].iconTurner {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin: -1px 4px 0 0;
+    vertical-align: middle;
+    cursor: pointer;
 }
 
+.iconContainer {
+    text-align: center;
+    background-color: #4169e1;
+    border: 3px solid #4169e1;
+    position: relative;
+}
 
+.iconBox:hover {
+    background-color: rgba(00, 0, 0, 0.2);
+    color: white;
+    transition: 0.5s ease;
+    cursor: pointer;
+    padding-bottom: 20px;
+}
 
-          .iconBox{
-            position: relative;
-            display: inline-block;
-            width: 20%;
-            border: 3px solid #4169e1;
-            line-height: 30px;
-            padding-top: 10px;
-          }
+.swatch img {
+    width: 100%;
+    margin: 0 auto;
+}
 
-                .iconBox:hover > .sizeBox{                  
-                      color: #4169e1;
-                      display:block;
+.iconBox {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    border: 3px solid #4169e1;
+    line-height: 30px;
+    padding-top: 10px;
+    border-radius: 10%;
+    background-color: white;
+}
 
-                    }
+.swatcher {
+  color: #4169e1;
+}
 
-                    .fafa-cog i {
-                      font-size: 20px;
-                      display: block;
-                    }
+.iconBox:hover > .sizeBox {
+    color: #rgba(00, 0, 0, 0.2);
+    opacity: 1;
+    -webkit-transition: 1.5s ease;
+}
+
+.iconBox .material-icons {
+    font-size: 20px;
+}
 
 .sizeBox {
-  background-color: rgba(00, 0, 0, 0.2);
-  padding: 10px;
-  position: absolute;
-  top: -195px;
-  right:50%;
-  transform: translateX(50%);
-  display: none;
+    background-color: rgba(00, 0, 0, 0.2);
+    padding: 10px;
+    position: absolute;
+    top: -189px;
+    right: 55%;
+    transform: translateX(50%);
+    opacity: 0;
+    font-size: 25px;
+    width: 80px;
+    transition: 2s ease;
 }
 
-        .size {
-        margin-bottom: 10px;
-        }
+.size {
+    margin-bottom: 10px;
 
-.swatchBox{
-  background-color: rgba(00, 0, 0, 0.2);
-  position: absolute;
-  top: -85px;
-  display: none;
 }
 
-.arrow {
-  width: 0; 
-  height: 0; 
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #f00;
+.sizer {
+
 }
 
-
-
-
-
-    .iconBox:hover > .swatchBox{
-  display: block;
+.size:hover {
+    color: blue;
 }
 
+.swatchBox {
+    background-color: rgba(00, 0, 0, 0.2);
+    position: absolute;
+    top: -91px;
+    opacity: 0;
+    transition: 2s ease;
+    transform-style: preserve-3d;
+}
 
-      .swatch{
-        display: inline-block;
-        margin: 2.5px;
-        width: 40px
-      }
+.swatchBox .arrow {
+    top: 82px;
+    right: 23%;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #4169e1;
+}
+.sizeBox .arrow {
+    top: 180px;
+    right: 19%;
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #4169e1;
+}
+.iconBox:hover > .swatchBox {
+    transition: 2s ease;
+    opacity: 1;
+}
+.iconBox:hover {
+    background-color: rgba(00, 0, 0, 0.2);
+    color:yellow;
+    transition:2s all ease;
 
-              .swatch i{
-                font-size: 20px;
-              }
 
 
+}
+.swatch {
+    display: inline-block;
+    margin: 2.5px;
+    width: 20px;
+    font-size: 40px;
+}
+        .swatch:hover {
+            transform: rotateZ(100deg);
+}
 .labelContainer {
-background-color: #4169e1;
-color:white;
+  position: relative;
+    background-color: #4169e1;
+    color: white;
+    padding: 0, 10%;
 }
 
-.labelContainer > *{
+
+
+.productPrice {
+    right: 20px;
+    position: absolute;
+    display: inline-block;
+    font-family: color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0, 10px;
+}
+
+.productName {
+  left: 10px;
+  position: relative;
   display: inline-block;
-  font-family: 
-  color: white;
-  font-size: 20px;
-
+    font-family: color: white;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0, 10px;
 }
 
-.productPrice{
-  float: right;
+
+@media screen and (max-width: 68.125em) {
+  .cbp-pggrid > li {
+    width: 48%;
+  }
 }
+
+@media screen and (max-width: 46.125em) {
+  .cbp-pggrid > li {
+    width: 100%;
+  }
+}
+
+
