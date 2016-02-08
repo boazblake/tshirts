@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: #76B1DE;
+  font-family: sans-serif;
+}
+
+
+.align-children {
+  font-size: 0;
+}
+
+.align-children > * {
+  display: inline-block;
+  font-size: medium;
+  vertical-align: top;
+}
+
+.allShirts {
+  margin: 0 auto;
+  perspective: 2000px;
+  position: relative;
+  background-opacity: 0;
+}
+
+.shirtBox {
+  border: 3px solid #76B1DE;
+  width: 33.3333%;
+}
+
+.imageContainer{
+  padding: 20px;
+  position: relative;
+  border-bottom: 3px solid #76B1DE;
+}
+
+.iconTurn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+}
+
+input.iconTurn {
+  -webkit-appearance:none;
+  outline: none;
+  z-index: 2;
+  border: 1px solid #76B1DE;
+  margin: 0;
+}
+
+i.iconTurn {
+  z-index: 1;
+  text-align: center;
+  line-height: 30px;
+}
+
+.imgHolder{
+  outline: none;
+  position: relative;
+  transform-style: preserve-3d;
+  width: 100%;
+  transition: 1s all ease;
+
+}
+
+  input[type="checkbox"]:checked ~ .imgHolder {
+    transform: rotateY(180deg);
+    
+  }
+
+img {
+  max-width: 100%;
+}
+
+.front {
+  position: relative;
+
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+}
+
+
+.menu {
+width: 100%;
+}
+
+.icons {
+  width: 20%;
+  text-align: center;
+}
+
+.icons > i {
+  line-height: 50px;
+}
+
+.icons:hover{
+  background-color: #76B1DE;
+}
+
+  .icons:hover > i {
+    color: white;
+  }
+
+ .icons:hover > .aboveBox {
+    display: block;
+  }
+
+.icons.sizes, 
+.icons.swatches {
+position: relative;
+}
+
+.aboveBox {
+  position: absolute;
+  background-color: rgba(200, 0, 0, 0.333);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.sizeOptions {
+  top: -112px;
+}
+
+.sizeOptions > * {
+  padding: 5px;
+}
+
+.swatchOptions {
+  top: -70px;
+  width: 60px;
+  padding: 10px;
+}
+
+.swatchColor{
+  text-align: center;
+  width: 50%;
+}
+
+
+.deets {
+  font-size: 20px;
+}
+
+.cost {
+  float: right;
+}

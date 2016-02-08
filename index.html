@@ -1,83 +1,72 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style/style.css"> //
+    <link rel="stylesheet" type="text/css" href="style/styles1.css">
     <script src="/js/script.js" type="text/javascript" charset="utf-8" async="" defer=""></script>
     <title></title>
 </head>
 
 <body>
-
-    <div class="allShirts">
-
+    <div class="container alignChildren">
         <div class="shirtBox">
-
-           <div class="imageContainer">
-		        <i class="material-icons iconTurn">3d_rotation</i>
-		        <input type="checkbox" class="iconTurn" id="iconTurn" />
-		        
-
-		        <div class="imgHolder">
-		            <img src="images/blueshirtfront.jpg" alt="front" class="front">
-		            <img src="images/blueshirtback.jpg" class="back" alt="back">
-		        </div>
-           </div>
-
-           <div class="menu align-children">
-        		<div class="icons">
-          			<i class="material-icons">repeat</i>
-          		</div>
-          		<div class="icons">
-          			<i class="material-icons">favorite</i>
-          		</div>
-          		<div class="icons sizes">
-          			<i class="material-icons">XL</i>
-          			<div class="sizeOptions aboveBox">
-          				<div class="xlarge">XL</div>
-          				<div class="large">L</div>
-          				<div class="medium">M</div>
-          				<div class="sml">S</div>
-          			</div>
-          		</div>
-          		<div class="icons swatches">
-          			<i class="material-icons">stop</i>
-          			<div class="swatchOptions aboveBox align-children">
-          				<div class="red swatchColor">
-          					<i class="material-icons">stop</i>
-          				</div>
-          				<div class="green swatchColor">
-          					<i class="material-icons">stop</i>
-          				</div>
-          				<div class="blue swatchColor">
-          					<i class="material-icons">stop</i>
-          				</div>
-          				<div class="yellow swatchColor">
-          					<i class="material-icons">stop</i>
-          				</div>
-          			</div>
-          		</div>
-          		<div class="icons">
-          			<i class="material-icons">shopping_cart</i>
-          		</div>
-           </div>
-
-
-           <div class="deets">
-                <div class="cost">$29</div>
-                <div class="name">Save my trees</div>
-           </div>
-
+            <div class="imageContainer">
+                <i class="material-icons" id="iconTurn">3d_rotation</i>
+                <input type="checkbox" class="iconTurn">
+                <div class="imgHolder .alignChildren">
+                    <img src="images/blueshirtfront.jpg" alt="blue front" class="front">
+                    <img src="images/blueshirtback.jpg" alt="blue back" class="back">
+                </div>
+            </div>
+            <div class="iconContainer alignChildren">
+                <div class="iconBox">
+                    <i class="material-icons">zoom_out_map</i>
+                </div>
+                <div class="iconBox">
+                    <i class="material-icons">thumb_up</i>
+                </div>
+                <div class="iconBox">
+                    <i class="material-icons sizer">XL</i>
+                    <div class="sizeBox">
+                        <div class="arrow"></div>
+                        <div class="size">XL</div>
+                        <div class="size">L</div>
+                        <div class="size">M</div>
+                        <div class="size">S</div>
+                    </div>
+                </div>
+                <div class="iconBox">
+                    <i class="material-icons swatcher">stop</i>
+                    <div class="swatchBox">
+                        <div class="arrow"></div>
+                        <div class="swatch">
+                            <img src="images/hexaRed.png" class="swatch">
+                        </div>
+                        <div class="swatch">
+                            <img src="images/hexaBlue.png" class="swatch">
+                        </div>
+                        <div class="swatch">
+                            <img src="images/hexaGreen.png" class="swatch">
+                        </div>
+                        <div class="swatch">
+                            <img src="images/hexaOran.png" class="swatch">
+                        </div>
+                    </div>
+                </div>
+                <div class="iconBox">
+                    <i class="material-icons">shopping_cart</i>
+                </div>
+            </div>
+            <div class="labelContainer">
+                <div class="productName">Save My Trees</div>
+                <div class="productPrice">$29</div>
+            </div>
         </div>
-
-
-
-
+        <!-- <div class="shirtBox"></div>
+	<div class="shirtBox"></div> -->
     </div>
-
-
-
 </body>
 
 </html>
