@@ -45,7 +45,7 @@ html {
 }
 
 input.iconTurn {
-   -webkit-appearance:none;
+  -webkit-appearance:none;
   outline: none;
   z-index: 2;
   border: 1px solid #76B1DE;

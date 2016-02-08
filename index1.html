@@ -1,32 +1,83 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
-    <link rel="stylesheet" type="text/css" href="style/styles1.css">
-    // <script src="/js/script.js" type="text/javascript" charset="utf-8" async="" defer=""></script>
+    <link rel="stylesheet" type="text/css" href="style/styles1.css"> 
+    <script src="/js/script.js" type="text/javascript" charset="utf-8" async="" defer=""></script>
     <title></title>
 </head>
-<body>
 
-	<div id="shirtbox">   
-	    <div class="menuBar">
-	    	<i class="material-icons">XL</i>
-	        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-    <path fill="#000000" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
-</svg>
-	        <i class="material-icons">3d_rotation</i>
-	        <i class="material-icons">3d_rotation</i>
-	        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
-    <path fill="#000000" d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z" />
-</svg>
-	    </div>
-	    <div class="deets">
-		    	<div class="cost">$29</div>
-		    	<div class="name">Save my trees</div>
+<body>
+<div class="container alignChildren">
+	<div class="shirtBox">
+		<div class="imageContainer">
+			
+				<i class="material-icons iconTurn">3d_rotation</i>
+				<input type="checkbox" class="iconTurn">
+				
+		
+			<div class="imgHolder .alignChildren">
+				<img src="images/blueshirtfront.jpg" alt="blue front" class="front">
+				<img src="images/blueshirtback.jpg" alt="blue back" class="back">
+			</div>
+		</div>
+		<div class="iconContainer alignChildren">
+				<div class="iconBox">
+					<i class="material-icons">stop</i>
+				</div>
+				<div class="iconBox">
+					<i class="material-icons">stop</i>
+				</div>
+				<div class="iconBox">
+					<i class="material-icons">stop</i>
+					<div class="sizeBox">
+						<div class="arrow"></div>
+						<div class="size">XL</div>
+						<div class="size">L</div>
+						<div class="size">M</div>
+						<div class="size">S</div>
+					</div>
+				</div>
+				<div class="iconBox">
+					<img src="images/octaBlue.png" class="swatch">
+					<div class="swatchBox">
+						<div class="swatch">
+							<img src="images/hexaRed.png">
+						</div>
+						<div class="swatch">
+							<img src="images/hexaBlue.png">
+						</div>
+						<div class="swatch">
+							<img src="images/hexaGreen.png">
+						</div>
+						<div class="swatch">
+							<img src="images/hexaOran.png">
+						</div>
+					</div>
+				</div>
+				<div class="iconBox">
+					<i class="material-icons">shopping_cart</i>
+				</div>
+			</div>
+		<div class="labelContainer">
+			<div class="productName">Save My Trees</div>
+			<div class="productPrice">$29</div>
 		</div>
 	</div>
-</body>
+	<!-- <div class="shirtBox"></div>
+	<div class="shirtBox"></div> -->
+</div>
 
+
+
+
+
+
+
+
+
+
+</body>
 </html>

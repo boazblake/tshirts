@@ -47,7 +47,7 @@ input {
   display: none;*/
 }
 
-i.iconTurn {
+i {
   z-index: 1;
   outline: none;
   text-align: center;
@@ -115,9 +115,8 @@ transform: rotateY(180deg);
 
                     }
 
-                    .fafa-cog i {
+                    .fafa-cog {
                       font-size: 20px;
-                      display: block;
                     }
 
 .sizeBox {
