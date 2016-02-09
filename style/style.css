@@ -125,9 +125,9 @@ input[type="checkBox"].iconTurner {
         color: white;
         transition: 0.5s ease;
         cursor: pointer;
-         background-color: #504169e1; 
+        background-color: #504169e1; 
         color:white;
-        transition:1.5s all ease;
+        transition:1s all ease;
     }
 
             .iconBox .material-icons {
@@ -141,12 +141,13 @@ input[type="checkBox"].iconTurner {
     position: absolute;
     transform: translateX(-50%);
     opacity: 0;
-    bottom: 100%; 
+    bottom: 150%; 
     left: 50%;
 }
 
         .iconBox:hover > .boxed {
-            transition: 1s ease;
+            /*transition: 1s ease;*/
+            bottom: 100%; 
             opacity: 1;
         }
 
@@ -165,9 +166,6 @@ input[type="checkBox"].iconTurner {
     .size:hover {
         color: blue;
     }
-
-
-
 
 .swatchBox{
     width: 100px;/
@@ -198,8 +196,8 @@ input[type="checkBox"].iconTurner {
 }
 
 .labelContainer {
-  position: relative;
-    background-color: #4169e1;
+    position: relative;
+    background:-webkit-linear-gradient(top, #2F2727, #4169e1);
     color: white;
     padding: 0, 10%;
     font-family: Hel­vetica Neue;
@@ -211,12 +209,14 @@ input[type="checkBox"].iconTurner {
 }
 
 .productName {
+padding-left: 10px;
 text-align: left;
 width: 75%;
 }
 
 
 .productPrice {
+padding-right: 10px;
 text-align: right;
 width: 25%;
 }
