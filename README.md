@@ -10,7 +10,8 @@ mobile first with @media implementation.
 
 Work to be done next:
 
-*improve initial rotation 
+* add to gh-pages
+* improve initial rotation 
 * add @media transitions
 * add transparancy to tshirt background
 * improve transitions and stying of buttons
