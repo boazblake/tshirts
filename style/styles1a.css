@@ -5,6 +5,7 @@
 html {
   font-family: sans-serif;
   min-width: 400px;
+  background-image: url('http://pic1.sc.chinaz.com/files/pic/pic7/xpic1100.jpg');
 
 }
 
@@ -62,7 +63,7 @@ i {
   position: relative;
   transform-style: preserve-3d;
   width: 100%;
-  transition: 1s all ease;
+  transition: .2s all ease;
 
 }
 

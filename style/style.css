@@ -4,6 +4,11 @@
 
 html {
     font-family: sans-serif;
+    background-image: url('http://pic1.sc.chinaz.com/files/pic/pic7/xpic1100.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .alignChildren {
@@ -26,8 +31,8 @@ html {
 }
 
 .imageContainer {
-    background-color: white;
-    border: 1px solid #4169e1;
+    max-height: 400px;
+    background-color: rgba(44, 62, 80,0.4);
     position: relative;
     padding: 10px;
     margin: 0 auto;
@@ -105,7 +110,6 @@ input[type="checkBox"].iconTurner {
 .iconContainer {
     text-align: center;
     background-color: rgba(00, 0, 0, 0.2);
-    border: 1px solid #4169e1;
     position: relative;
 }
 
@@ -113,7 +117,7 @@ input[type="checkBox"].iconTurner {
     position: relative;
     display: inline-block;
     width: 20%;
-    border: 1px solid #4169e1;
+    box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
     line-height: 30px;
     padding-top: 10px;
     border-radius: 10%;
@@ -235,3 +239,5 @@ width: 25%;
   width: 33.3333%;
 }
 }
+
+
